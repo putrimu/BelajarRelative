@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mu.android.belajar.belajarrelative.MainActivity">
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <TextView
+           android:id="@+id/tv_data"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Data Mahasiswa"
+           android:layout_centerHorizontal="true"
+           android:textSize="30sp"
+           android:textStyle="bold"/>
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Username"
+           android:id="@+id/et_username"
+           android:layout_below="@+id/tv_data"
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp"/>
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="textPassword"
+           android:hint="Password"
+           android:id="@+id/et_pass"
+           android:layout_below="@+id/et_username"
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Pilih Jurusan"
+           android:id="@+id/et_jur"
+           android:layout_below="@+id/et_pass"
+           android:layout_marginLeft="15dp"
+           android:layout_margin="15dp"/>
+       <Spinner
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/sp_jur"
+           android:layout_toRightOf="@+id/et_jur"
+           android:layout_below="@+id/et_pass"
+           android:layout_margin="15dp"
+           android:entries="@array/isi_Spinner">
+       </Spinner>
+       <RadioGroup
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/rb_button"
+           android:layout_below="@+id/sp_jur"
+           android:layout_marginLeft="15dp">
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/rd_button1"
+               android:text="Laki - Laki"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/rd_button2"
+               android:text="Perempuan"/>
+       </RadioGroup>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Pilih Kelas :"
+           android:id="@+id/tv_kelas"
+           android:layout_below="@+id/rb_button"
+           android:layout_marginLeft="15dp"
+           android:layout_marginTop="10dp"/>
+       <CheckBox
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Kelas A"
+           android:id="@+id/cb_a"
+           android:layout_below="@+id/tv_kelas"
+           android:layout_marginTop="10dp"/>
+       <CheckBox
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Kelas B"
+           android:id="@+id/cb_b"
+           android:layout_toRightOf="@+id/cb_a"
+           android:layout_below="@+id/tv_kelas"
+           android:layout_margin="10dp"/>
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Simpan"
+           android:id="@+id/bt_simpan"
+           android:layout_below="@+id/cb_a"
+           android:layout_margin="15dp"
+           android:background="@color/colorPrimary"/>
+   </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BelajarRelative</string>
+
+    <string-array name="isi_Spinner">
+        <item>Teknik Informatika</item>
+        <item>Biologi</item>
+        <item>Ilmu Hukum</item>
+        <item>Kimia</item>
+        <item>Agroteknologi</item>
+        <item>Fisika</item>
+    </string-array>
+</resources>
